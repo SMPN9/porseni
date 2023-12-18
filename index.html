@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<title>PORSENI</title>
+
+<style>
+	* {font-family:Arial}
+	audio{dipslay:none}
+	#jam{margin:10px;padding:10px;font-size:80px;font-weight:bold}
+	 @media all and (min-width: 768px) {
+	 #jam{position:absolute;top:100px;left:400px;margin:10px;padding:10px;font-size:200px;font-weight:bold;}
+	 #mhari{position:absolute;top:280px;left:420px;margin:10px;padding:10px;font-size:150px;font-weight:bold;color:#ffc61e}
+	 #ref{margin:10px;padding:10px;font-size:30px;font-weight:bold;background:#ffc61e;color:#2f4853;cursor:pointer;border-radius:10px;border:2px solid black;}
+	 }
+	 #ref:hover{background:orange;cursor:pointer}
+	body{background:white;color:white}
+	button{margin:5px;padding:10px;width:20%;font-size:30px;font-weight:bold;border-radius:10px;background:#ffc61e;color:#2f4853}
+	button:hover{background:orange;cursor:pointer}
+	</style>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+</head>
+<body>
+<div class='no-items section' id='contoh'></div>
+<center>
+ 
+<div id='buka' style='display:block'>
+ 
+
+<div id='jam'></div>
+<div id='mhari'></div>
+ 
+<audio controls='controls' onloadeddata='siap(1)' id='schoolBell'><source src='fifa.mp3' type='audio/mpeg'></source></audio>
+<audio onloadeddata='siap(2)' id='schoolBell1'><source src='9a.mp3' type='audio/mpeg'></source></audio>
+<audio onloadeddata='siap(3)' id='schoolBell2'><source src='9b.mp3' type='audio/mpeg'></source></audio>
+<audio  onloadeddata='siap(4)' id='schoolBell3'><source src='8a.mp3' type='audio/mpeg'></source></audio>
+<audio  onloadeddata='siap(5)' id='schoolBell4'><source src='8b.mp3' type='audio/mpeg'></source></audio>
+<audio  onloadeddata='siap(6)' id='schoolBell5'><source src='7a.mp3' type='audio/mpeg'></source></audio>
+<audio onloadeddata='siap(7)' id='schoolBell6'><source src='7b.mp3' type='audio/mpeg'></source></audio>
+<audio onloadeddata='siap(8)' id='schoolBell7'><source src='tepuk.mp3' type='audio/mpeg'></source></audio>
+ 
+<button onclick='audio.play()'>Fifa Anthem</button><br/>
+ <button onclick='audio1.play()'>9A</button>
+ <button onclick='audio2.play()'>9B</button><br/>
+ <button onclick='audio3.play()'>8A</button>
+ <button onclick='audio4.play()'>8B</button><br/>
+ <button onclick='audio5.play()'>7A</button>
+ <button onclick='audio6.play()'>7B</button><br/>
+ <button onclick='audio7.play()'>Tepuk Tangan</button><br/>
+ 
+<button onclick='stop();'>Stop Music</button><br/>
+
+</div>
+</center>
+<script>
+           var audio = document.getElementById("schoolBell");
+		  var audio1 = document.getElementById("schoolBell1");
+		  var audio2 = document.getElementById("schoolBell2");
+		  var audio3 = document.getElementById("schoolBell3");
+          var audio4 = document.getElementById("schoolBell4");
+		  var audio5 = document.getElementById("schoolBell5");
+		  var audio6 = document.getElementById("schoolBell6");
+		   var audio7 = document.getElementById("schoolBell7");
+		 
+		  
+		  audio1.onplay=function(){}
+		  audio1.ontimeupdate=function(){
+		                                 if ( audio1.currentTime>=20.460191){audio.play()}
+										 
+										 if ( audio1.currentTime<=8){audio.pause()}
+										 
+										  
+		                                }
+		  audio1.onended=function(){audio.play()}
+		  
+		   // audio2.onplay=function(){audio.pause()}
+			 audio2.ontimeupdate=function(){
+		                                 if ( audio2.currentTime>=20.460191){audio.play()}
+										   if ( audio2.currentTime<=8){audio.pause()}
+		                                }
+		  audio2.onended=function(){audio.play()}
+		  
+		   // audio3.onplay=function(){audio.pause()}
+			 audio3.ontimeupdate=function(){
+		                                 if ( audio3.currentTime>=20.460191){audio.play()}
+										  if ( audio3.currentTime<=8){audio.pause()}
+		                                }
+		  audio3.onended=function(){audio.play()}
+		  
+		  //  audio4.onplay=function(){audio.pause()}
+			 audio4.ontimeupdate=function(){
+		                                 if ( audio4.currentTime>=20.460191){audio.play()}
+										  if ( audio4.currentTime<=8){audio.pause()}
+		                                }
+		  audio4.onended=function(){audio.play()}
+		  
+		   // audio5.onplay=function(){audio.pause()}
+			 audio5.ontimeupdate=function(){
+		                                 if ( audio5.currentTime>=20.460191){audio.play()}
+										  if ( audio5.currentTime<=8){audio.pause()}
+		                                }
+		  audio5.onended=function(){audio.play()}
+		  
+		   // audio6.onplay=function(){audio.pause()}
+			 audio6.ontimeupdate=function(){
+		                                 if ( audio6.currentTime>=20.460191){audio.play()}
+										  if ( audio6.currentTime<=8){audio.pause()}
+		                                }
+		  audio6.onended=function(){audio.play()}
+		   
+		   
+		  
+		  
+		  var buka = document.getElementById("buka");
+		  function stop(){
+		                   audio1.pause();audio1.currentTime=0;
+						   audio2.pause();audio2.currentTime=0;
+						   audio3.pause();audio3.currentTime=0;
+						   audio4.pause();audio4.currentTime=0;
+						   audio5.pause();audio5.currentTime=0;
+						   audio6.pause();audio6.currentTime=0;
+                             audio7.pause();audio7.currentTime=0;
+						  // audio.pause();
+						  }
+						  
+		  
+	
+    </script>
+
+ 
+ 
+</body>
+</html>
